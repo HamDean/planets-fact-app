@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { styles, planets } from "../data/constants";
 import NavLinksMob from "./NavLinksMob";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -16,8 +16,13 @@ const NavBar = () => {
           className={`${styles.flexBetween} hidden md:flex  gap-[33px] uppercase text-[#838391] text-[1.1rem] font-bold md:mt-[40px] lg:mt-0 md:mb-[10px] lg:mb-0 md:w-full lg:w-auto md:px-[50px] lg:px-0 md:justify-between md:items-center`}
         >
           {planets.map((planet, i) => (
-            <li key={i}>
-              <Link to={"mercury/" + planet}>{planet}</Link>
+            <li key={i} className="hover:text-white transition-all">
+              <NavLink
+                to={"mercury/" + planet}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {planet}
+              </NavLink>
             </li>
           ))}
         </ul>
