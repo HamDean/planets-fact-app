@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { styles, planets } from "../data/constants";
 import NavLinksMob from "./NavLinksMob";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -16,12 +17,7 @@ const NavBar = () => {
         >
           {planets.map((planet, i) => (
             <li key={i}>
-              <a
-                href="#"
-                className="cursor-pointer md:hover:text-white transition-all"
-              >
-                {planet}
-              </a>
+              <Link to={"mercury/" + planet}>{planet}</Link>
             </li>
           ))}
         </ul>
