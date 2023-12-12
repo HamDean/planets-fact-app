@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Antonio&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan&family=Lobster&family=Nunito:wght@400;700&display=swap")
-  @tailwind base;
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;700&family=Lobster&family=Nunito:wght@400;700&display=swap");
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("assets/background-stars.svg");
+  background-color: #070724;
+  color: white;
+}
+
+h1 {
+  @apply font-antonio text-[2.8rem];
+}

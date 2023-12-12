@@ -3,8 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        stars: "url('../src/assets/background-stars.svg')",
+      },
       fontFamily: {
-        anotonio: ["Antonio", "sans-serif"],
+        antonio: ["Antonio", "sans-serif"],
         spartan: ["League Spartan", "sans-serif"],
       },
     },
