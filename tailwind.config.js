@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        anotonio: ["Antonio", "sans-serif"],
+        spartan: ["League Spartan", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
