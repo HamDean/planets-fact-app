@@ -6,6 +6,7 @@ import NavLinksMob from "./NavLinksMob";
 const NavBar = () => {
   const setOpen = usePlanetStore((s) => s.setOpen);
   const isOpen = usePlanetStore((s) => s.isOpen);
+  const setPlanet = usePlanetStore((s) => s.setPlanet);
 
   return (
     <nav className="flex flex-col">
@@ -20,8 +21,9 @@ const NavBar = () => {
           {planets.map((planet, i) => (
             <li key={i} className="hover:text-white transition-all">
               <NavLink
-                to={"mercury/" + planet}
+                to={"/" + planet}
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setPlanet(planet)}
               >
                 {planet}
               </NavLink>

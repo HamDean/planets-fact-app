@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import { planets } from "../data/constants";
-import { styles } from "../data/constants";
+import { planets, styles } from "../data/constants";
+import usePlanetStore from "../store";
 
 const NavLinksMob = () => {
+  const setPlanet = usePlanetStore((s) => s.setPlanet);
+  const setOpen = usePlanetStore((s) => s.setOpen);
   const colorCode: { [key: number]: string } = {
     0: "#DEF4FC",
     1: "#F7CC7F",
@@ -34,7 +36,15 @@ const NavLinksMob = () => {
             >
               <circle cx="10" cy="10" r="10" fill={`${colorCode[i]}`} />
             </svg>
-            <Link to={"/"}>{p}</Link>
+            <Link
+              to={"/" + p}
+              onClick={() => {
+                setPlanet(p);
+                setOpen();
+              }}
+            >
+              {p}
+            </Link>
           </span>
           <img src="../src/assets/icon-chevron.svg" />
         </li>

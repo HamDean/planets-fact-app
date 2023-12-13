@@ -11,10 +11,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/:id",
         element: <PlanetPage />,
         children: [
-          { path: "/", element: <OverviewPage /> },
+          { index: true, element: <OverviewPage /> },
           { path: "structure", element: <StructurePage /> },
           { path: "surface", element: <SurfacePage /> },
         ],
