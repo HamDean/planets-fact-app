@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { planets } from "../data/constants";
 import { styles } from "../data/constants";
 
@@ -33,7 +34,7 @@ const NavLinksMob = () => {
             >
               <circle cx="10" cy="10" r="10" fill={`${colorCode[i]}`} />
             </svg>
-            {p}
+            <Link to={"/"}>{p}</Link>
           </span>
           <img src="../src/assets/icon-chevron.svg" />
         </li>

@@ -1,10 +1,12 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { planets, styles } from "../data/constants";
+import usePlanetStore from "../store";
 import NavLinksMob from "./NavLinksMob";
 
 const NavBar = () => {
-  const [isOpen, setOpen] = useState(false);
+  const setOpen = usePlanetStore((s) => s.setOpen);
+  const isOpen = usePlanetStore((s) => s.isOpen);
+
   return (
     <nav className="flex flex-col">
       <div
@@ -28,9 +30,9 @@ const NavBar = () => {
         </ul>
 
         <img
-          className="w-[2.4rem] h-[1.7rem] md:hidden"
+          className="w-[2.4rem] h-[1.7rem] cursor-pointer md:hidden"
           src="../src/assets/icon-hamburger.svg"
-          onClick={() => setOpen(!isOpen)}
+          onClick={() => setOpen()}
         />
       </div>
       {isOpen && <NavLinksMob />}
