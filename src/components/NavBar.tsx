@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { styles, planets } from "../data/constants";
-import NavLinksMob from "./NavLinksMob";
 import { NavLink } from "react-router-dom";
-import FactTabMob from "./FactTabMob";
+import { planets, styles } from "../data/constants";
+import NavLinksMob from "./NavLinksMob";
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -34,7 +33,6 @@ const NavBar = () => {
           onClick={() => setOpen(!isOpen)}
         />
       </div>
-      {!isOpen && <FactTabMob />}
       {isOpen && <NavLinksMob />}
     </nav>
   );

@@ -21,3 +21,8 @@ h1 {
   border-top: 2px solid #419ebb;
   padding-top: 27px;
 }
+
+.active-mob {
+  border-bottom: 2px solid #419ebb;
+  padding-bottom: 15px;
+}
