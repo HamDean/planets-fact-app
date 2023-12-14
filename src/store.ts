@@ -8,7 +8,7 @@ interface PlanetStore {
 }
 
 const usePlanetStore = create<PlanetStore>((set) => ({
-  planet: "",
+  planet: "mercury",
   isOpen: false,
   setPlanet: (planet) => set(() => ({ planet: planet })),
   setOpen: () => set((store) => ({ isOpen: !store.isOpen })),

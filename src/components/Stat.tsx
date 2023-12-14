@@ -1,19 +1,17 @@
-import { styles } from "../data/constants";
-
 interface Props {
   stat: string;
-  figure: number;
+  figure?: string;
 }
 
 const StatMob = ({ stat, figure }: Props) => {
   return (
     <div
-      className={`${styles.flexBetween} md:flex-col px-[24px] md:p-5 py-[13px] border-[#38384F] border h-[48px] md:h-[80px] uppercase mb-[8px] md:mb-0`}
+      className={`flex justify-between items-center w-[375px] md:min-w-[165px] md:flex-col md:items-start px-[10px]   md:p-5 py-[13px] border-[#38384F] border h-[48px] md:h-auto md:mb1  uppercase mb-[8px] md:mb-0  text-left`}
     >
       <p className="text-[#838391] text-[9px] font-bold font-spartan">{stat}</p>
-      <h3 className="text-[2rem] md:text-[2.4rem] font-antonio">
-        {figure} DAYS
-      </h3>
+      <span className="text-[16px] tracking-[-1px] md:text-[20px] font-antonio text-left ">
+        {figure}
+      </span>
     </div>
   );
 };
