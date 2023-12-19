@@ -9,15 +9,10 @@ const OverviewPage = () => {
     (planet) => planet.name.toLocaleLowerCase() === currentPlanet
   );
 
-  // const sizes = planet?.images.size;
-  // let sm = sizes![0].sm;
-  // let md = sizes![1].md;
-  // let lg = sizes![2].lg;
-
   return (
     <section className="flex flex-col justify-center items-center px-7 text-center md:text-left mt-[95px]">
-      <div className="lg:grid lg:grid-cols-2 lg:w-[80vw]">
-        <div className="mb-[100px]">
+      <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:w-[80vw]">
+        <div className="mb-[100px] lg:mx-auto  lg:my-auto">
           <img
             className={`w-[110px] h-[$180px] md:w-[180px] md:h-[180px] lg:w-[260px] lg:h-[260px]`}
             src={planet?.images.planet}
