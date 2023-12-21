@@ -22,6 +22,26 @@ h1 {
   padding-top: 27px;
 } */
 
+.tab-container {
+  @apply flex flex-col justify-center items-center px-7 text-center md:text-left mt-[50px];
+}
+
+.tab-layout {
+  @apply flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:w-[80vw] mb-32;
+}
+
+.planet-image-container {
+  @apply mb-[100px] lg:mx-auto lg:my-auto relative;
+}
+
+.planet-image {
+  @apply w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[260px] lg:h-[260px] object-contain;
+}
+
+.surface-image {
+  @apply absolute top-56 left-[45px] md:top-[150px] md:left-16 lg:top-[200px] lg:left-20 w-[90px] h-[90px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px] object-contain;
+}
+
 .active-mob {
   border-bottom: 2px solid #419ebb;
   padding-bottom: 15px;
