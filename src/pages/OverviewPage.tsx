@@ -12,11 +12,11 @@ const OverviewPage = () => {
   );
 
   return (
-    <section className="flex flex-col justify-center items-center px-7 text-center md:text-left mt-[95px]">
-      <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:w-[80vw]">
+    <section className="flex flex-col justify-center items-center px-7 text-center md:text-left mt-[50px]">
+      <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:w-[80vw] mb-32">
         <div className="mb-[100px] lg:mx-auto  lg:my-auto">
           <img
-            className={`w-[110px] h-[$180px] md:w-[180px] md:h-[180px] lg:w-[260px] lg:h-[260px]`}
+            className={`w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[260px] lg:h-[260px] object-contain`}
             src={planet?.images.planet}
             alt={`Planet ${planet}`}
           />
