@@ -12,16 +12,16 @@ const OverviewPage = () => {
   );
 
   return (
-    <section className="flex flex-col justify-center items-center px-7 text-center md:text-left mt-[50px]">
-      <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:w-[80vw] mb-32">
-        <div className="mb-[100px] lg:mx-auto lg:my-auto relative">
+    <section className="tab-container">
+      <div className="tab-layout">
+        <div className="planet-image-container">
           <img
-            className={`w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[260px] lg:h-[260px] object-contain`}
+            className="planet-image"
             src={planet?.images.planet}
             alt={`Planet ${planet}`}
           />
           <img
-            className={`absolute top-56 left-[45px] md:top-[150px] md:left-16 lg:top-[200px] lg:left-20 w-[90px] h-[90px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px] object-contain`}
+            className="surface-image"
             src={planet?.images.geology}
             alt={`Planet ${planet}`}
           />
