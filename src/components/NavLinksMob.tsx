@@ -37,7 +37,7 @@ const NavLinksMob = () => {
               <circle cx="10" cy="10" r="10" fill={`${colorCode[i]}`} />
             </svg>
             <Link
-              to={"/" + p}
+              to={"/"}
               onClick={() => {
                 setPlanet(p);
                 setOpen();

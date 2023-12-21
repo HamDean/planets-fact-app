@@ -1,8 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { styles } from "../data/constants";
+import usePlanetStore from "../store";
 
 const FactTabMob = () => {
   const navTabMob = ["overview", "structure", "surface"];
+  const setTab = usePlanetStore((s) => s.setTab);
 
   return (
     <div
@@ -13,12 +15,9 @@ const FactTabMob = () => {
           key={i}
           className="w-[88px] py-5 hover:text-white cursor-pointer transition-all"
         >
-          <NavLink
-            to={i === 0 ? `/${nav}` : "/" + nav}
-            className={({ isActive }) => (isActive ? "active-mob" : "")}
-          >
+          <Link to={i === 0 ? "/" : "/" + nav} onClick={() => setTab(nav)}>
             {nav}
-          </NavLink>
+          </Link>
         </div>
       ))}
     </div>
