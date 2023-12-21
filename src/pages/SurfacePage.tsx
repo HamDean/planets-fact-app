@@ -1,7 +1,6 @@
 import FactTabList from "../components/FactTabList";
 import PageImage from "../components/PageImage";
 import PlanetDesc from "../components/PlanetDesc";
-import StatList from "../components/StatList";
 import planets from "../data/data";
 import usePlanetStore from "../store";
 
@@ -30,7 +29,6 @@ const OverviewPage = () => {
           <FactTabList />
         </div>
       </div>
-      <StatList planet={planet} />
     </section>
   );
 };

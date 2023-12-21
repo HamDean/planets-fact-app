@@ -6,7 +6,7 @@ interface Props {
 
 const PlanetDesc = ({ name, content, source }: Props) => {
   return (
-    <div>
+    <div className="lg:mb-[40px]">
       <h2 className="text-[4rem] font-antonio mb-[16px] uppercase">{name}</h2>
       <p className="text-[1.1rem] font-spartan opacity-[0.5] leading-[22px] w-[320px]">
         {content}
@@ -16,7 +16,7 @@ const PlanetDesc = ({ name, content, source }: Props) => {
         <a
           href={source}
           target="_blank"
-          className="flex items-center justify-center text-[1.1rem] font-spartan opacity-[0.7] font-bold leading-[25px] underline"
+          className="flex items-center justify-start text-[1.1rem] font-spartan opacity-[0.7] font-bold leading-[25px] underline"
         >
           Wikipedia
           <span>

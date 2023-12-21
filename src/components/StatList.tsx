@@ -7,7 +7,7 @@ interface Props {
 
 const StatList = ({ planet }: Props) => {
   return (
-    <div className="md:w-[80vw] md:flex md:justify-between gap-2 items-center mt-[30px]">
+    <div className="md:w-[80vw] flex flex-col md:flex-row md:justify-between gap-2 items-center mt-[30px] mx-auto">
       <StatMob stat="rotation time" figure={planet?.rotation} />
       <StatMob stat="revolution time" figure={planet?.revolution} />
       <StatMob stat="radius" figure={planet?.radius} />
