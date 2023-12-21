@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { styles } from "../data/constants";
 import usePlanetStore from "../store";
 

@@ -38,6 +38,10 @@ h1 {
   @apply w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[260px] lg:h-[260px] object-contain;
 }
 
+.planet-desc {
+  @apply md:flex lg:flex-col md:justify-between md:items-center lg:items-stretch md:w-[80vw] lg:w-[350px] lg:justify-self-end;
+}
+
 .surface-image {
   @apply absolute top-56 left-[45px] md:top-[150px] md:left-16 lg:top-[200px] lg:left-20 w-[90px] h-[90px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px] object-contain;
 }
