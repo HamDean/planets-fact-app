@@ -25,7 +25,6 @@ export default [
       planet: "../src/assets/planet-mercury.svg",
       internal: "../src/assets/planet-mercury-internal.svg",
       geology: "../src/assets/geology-mercury.png",
-      size: [{ sm: 110 }, { md: 185 }, { lg: 290 }],
     },
   },
   {
