@@ -1,10 +1,12 @@
-import usePlanetStore from "../store";
-import planets from "../data/data";
-import StatMob from "../components/Stat";
+import { NavLink } from "react-router-dom";
 import FactTab from "../components/FactTab";
+import StatMob from "../components/Stat";
+import planets from "../data/data";
+import usePlanetStore from "../store";
 
 const OverviewPage = () => {
   const currentPlanet = usePlanetStore((s) => s.planet);
+
   const planet = planets.find(
     (planet) => planet.name.toLocaleLowerCase() === currentPlanet
   );
@@ -47,9 +49,15 @@ const OverviewPage = () => {
           </div>
 
           <div className="hidden md:block lg:w-[350px] lg:self-end ">
-            <FactTab index={1} title="overview" />
-            <FactTab index={2} title="internal structure" />
-            <FactTab index={3} title="geology" />
+            <NavLink to={"/"}>
+              <FactTab index={1} title="overview" />
+            </NavLink>
+            <NavLink to={"/structure"}>
+              <FactTab index={2} title="internal structure" />
+            </NavLink>
+            <NavLink to={"/surface"}>
+              <FactTab index={3} title="geology" />
+            </NavLink>
           </div>
         </div>
       </div>

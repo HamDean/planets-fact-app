@@ -20,11 +20,7 @@ const NavBar = () => {
         >
           {planets.map((planet, i) => (
             <li key={i} className="hover:text-white transition-all">
-              <NavLink
-                to={"/" + planet}
-                className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={() => setPlanet(planet)}
-              >
+              <NavLink to={"/"} onClick={() => setPlanet(planet)}>
                 {planet}
               </NavLink>
             </li>
