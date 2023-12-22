@@ -9,17 +9,20 @@ const NavBar = () => {
   const setPlanet = usePlanetStore((s) => s.setPlanet);
 
   return (
-    <nav className="flex flex-col">
+    <nav className="flex flex-col lg:py-5">
       <div
         className={`${styles.flexBetween} border-[#38384F] border-b md:border-1 md:flex-col lg:flex-row  py-[16px] px-[24px]`}
       >
         <h1 className="md:mt-[20px] lg:mt-0">THE PLANETS </h1>
 
         <ul
-          className={`${styles.flexBetween} hidden md:flex  gap-[33px] uppercase text-[#838391] text-[1.1rem] font-bold md:mt-[40px] lg:mt-0 md:mb-[10px] lg:mb-0 md:w-full lg:w-auto md:px-[50px] lg:px-0 md:justify-between md:items-center`}
+          className={`${styles.flexBetween} hidden md:flex lg:h-[45px]  gap-[33px] uppercase text-[#838391] text-[1.1rem] font-bold md:mt-[40px] lg:mt-0 md:mb-[10px] lg:mb-0 md:w-full lg:w-auto md:px-[50px] lg:px-0 md:justify-between md:items-center`}
         >
           {planets.map((planet, i) => (
-            <li key={i} className="hover:text-white transition-all">
+            <li
+              key={i}
+              className="hover:text-white lg:hover:border-t-2 lg:hover:border-green-500 lg:hover:py-16 transition-all"
+            >
               <NavLink to={"/"} onClick={() => setPlanet(planet)}>
                 {planet}
               </NavLink>

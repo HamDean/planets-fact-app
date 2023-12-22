@@ -17,9 +17,9 @@ h1 {
   @apply font-antonio text-[2.8rem];
 }
 
-/* .active {
+/* .planetHover:hover {
   border-top: 2px solid #419ebb;
-  padding-top: 27px;
+  margin-top: 20px;
 } */
 
 .tab-container {
