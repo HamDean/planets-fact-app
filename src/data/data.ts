@@ -26,6 +26,7 @@ export default [
       internal: "../src/assets/planet-mercury-internal.svg",
       geology: "../src/assets/geology-mercury.png",
     },
+    color: "#DEF4FC",
   },
   {
     name: "Venus",
@@ -53,6 +54,7 @@ export default [
       internal: "../src/assets/planet-venus-internal.svg",
       geology: "../src/assets/geology-venus.png",
     },
+    color: "#F7CC7F",
   },
   {
     name: "Earth",
@@ -80,6 +82,7 @@ export default [
       internal: "../src/assets/planet-earth-internal.svg",
       geology: "../src/assets/geology-earth.png",
     },
+    color: "545BFE",
   },
   {
     name: "Mars",
@@ -107,6 +110,7 @@ export default [
       internal: "../src/assets/planet-mars-internal.svg",
       geology: "../src/assets/geology-mars.png",
     },
+    color: "FF6A45",
   },
   {
     name: "Jupiter",
@@ -135,6 +139,7 @@ export default [
       internal: "../src/assets/planet-jupiter-internal.svg",
       geology: "../src/assets/geology-jupiter.png",
     },
+    color: "ECAD7A",
   },
   {
     name: "Saturn",
@@ -162,6 +167,7 @@ export default [
       internal: "../src/assets/planet-saturn-internal.svg",
       geology: "../src/assets/geology-saturn.png",
     },
+    color: "FCCB6B",
   },
   {
     name: "Uranus",
@@ -189,6 +195,7 @@ export default [
       internal: "../src/assets/planet-uranus-internal.svg",
       geology: "../src/assets/geology-uranus.png",
     },
+    color: "65F0D5",
   },
   {
     name: "Neptune",
@@ -216,5 +223,6 @@ export default [
       internal: "../src/assets/planet-neptune-internal.svg",
       geology: "../src/assets/geology-neptune.png",
     },
+    color: "497EFA",
   },
 ];
