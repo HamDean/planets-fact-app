@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Define CSS variables based on the provided color code and planet array */
+  --mercury-bg: #def4fc;
+  --venus-bg: #f7cc7f;
+  --earth-bg: #545bfe;
+  --mars-bg: #ff6a45;
+  --jupiter-bg: #ecad7a;
+  --saturn-bg: #fccb6b;
+  --uranus-bg: #65f0d5;
+  --neptune-bg: #497efa;
+}
+
 html {
   font-size: 61.5%;
 }
@@ -16,11 +28,6 @@ body {
 h1 {
   @apply font-antonio text-[2.8rem];
 }
-
-/* .planetHover:hover {
-  border-top: 2px solid #419ebb;
-  margin-top: 20px;
-} */
 
 .tab-container {
   @apply flex flex-col justify-center items-center px-7 text-center md:text-left mt-[50px];
@@ -50,4 +57,36 @@ h1 {
   border-bottom: 2px solid #419ebb;
   padding-bottom: 15px;
   color: white;
+}
+
+.activeTab-mercury {
+  background: var(--mercury-bg);
+}
+
+.activeTab-venus {
+  background: var(--venus-bg);
+}
+
+.activeTab-earth {
+  background: var(--earth-bg);
+}
+
+.activeTab-mars {
+  background: var(--mars-bg);
+}
+
+.activeTab-jupiter {
+  background: var(--jupiter-bg);
+}
+
+.activeTab-saturn {
+  background: var(--saturn-bg);
+}
+
+.activeTab-uranus {
+  background: var(--uranus-bg);
+}
+
+.activeTab-neptune {
+  background: var(--neptune-bg);
 }

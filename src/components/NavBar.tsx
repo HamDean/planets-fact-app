@@ -7,6 +7,16 @@ const NavBar = () => {
   const setOpen = usePlanetStore((s) => s.setOpen);
   const isOpen = usePlanetStore((s) => s.isOpen);
   const setPlanet = usePlanetStore((s) => s.setPlanet);
+  const colorCode: { [key: number]: string } = {
+    0: "#DEF4FC",
+    1: "#F7CC7F",
+    2: "#545BFE",
+    3: "#FF6A45",
+    4: "#ECAD7A",
+    5: "#FCCB6B",
+    6: "#65F0D5",
+    7: "#497EFA",
+  };
 
   return (
     <nav className="flex flex-col lg:py-5">
@@ -21,7 +31,7 @@ const NavBar = () => {
           {planets.map((planet, i) => (
             <li
               key={i}
-              className="hover:text-white lg:hover:border-t-2 lg:hover:border-green-500 lg:hover:py-16 transition-all"
+              className={`hover:text-white lg:hover:border-t-2 lg:hover:border-[${colorCode[i]}] lg:hover:py-16 transition-all `}
             >
               <NavLink to={"/"} onClick={() => setPlanet(planet)}>
                 {planet}
