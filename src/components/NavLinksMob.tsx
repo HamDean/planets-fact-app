@@ -5,6 +5,7 @@ import usePlanetStore from "../store";
 const NavLinksMob = () => {
   const setPlanet = usePlanetStore((s) => s.setPlanet);
   const setOpen = usePlanetStore((s) => s.setOpen);
+  const setSelectedIndex = usePlanetStore((s) => s.setSelectedIndex);
   const colorCode: { [key: number]: string } = {
     0: "#DEF4FC",
     1: "#F7CC7F",
@@ -24,6 +25,7 @@ const NavLinksMob = () => {
           className={`${
             i !== planets.length - 1 ? "border-b border-[#38384F]" : ""
           } py-10 ${styles.flexBetween}`}
+          onClick={() => setSelectedIndex(0)}
         >
           <span className={`${styles.flexBetween} gap-7`}>
             <svg

@@ -15,7 +15,7 @@ const usePlanetStore = create<PlanetStore>((set) => ({
   planet: "mercury",
   tab: "overview",
   isOpen: false,
-  selectedIndex: -1,
+  selectedIndex: 1,
   setPlanet: (planet) => set(() => ({ planet: planet })),
   setOpen: () => set((store) => ({ isOpen: !store.isOpen })),
   setTab: (tab) => set(() => ({ tab: tab })),
