@@ -6,6 +6,7 @@ const NavLinksMob = () => {
   const setPlanet = usePlanetStore((s) => s.setPlanet);
   const setOpen = usePlanetStore((s) => s.setOpen);
   const setSelectedIndex = usePlanetStore((s) => s.setSelectedIndex);
+  const setPlanetIndex = usePlanetStore((s) => s.setPlanetIndex);
   const colorCode: { [key: number]: string } = {
     0: "#DEF4FC",
     1: "#F7CC7F",
@@ -43,6 +44,7 @@ const NavLinksMob = () => {
               onClick={() => {
                 setPlanet(p);
                 setOpen();
+                setPlanetIndex(i);
               }}
             >
               {p}
