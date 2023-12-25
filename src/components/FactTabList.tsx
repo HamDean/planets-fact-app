@@ -11,8 +11,8 @@ const FactTabList = () => {
     <div className="hidden md:block lg:w-[350px] lg:self-end ">
       <NavLink to={"/"}>
         <FactTab
-          onSelectTab={() => setSelectedIndex(1)}
-          isActive={selectedIndex === 1}
+          onSelectTab={() => setSelectedIndex(0)}
+          isActive={selectedIndex === 0}
           planet={planet}
           index={1}
           title="overview"
@@ -20,8 +20,8 @@ const FactTabList = () => {
       </NavLink>
       <NavLink to={"/structure"}>
         <FactTab
-          onSelectTab={() => setSelectedIndex(2)}
-          isActive={selectedIndex === 2}
+          onSelectTab={() => setSelectedIndex(1)}
+          isActive={selectedIndex === 1}
           planet={planet}
           index={2}
           title="internal structure"
@@ -29,8 +29,8 @@ const FactTabList = () => {
       </NavLink>
       <NavLink to={"/surface"}>
         <FactTab
-          onSelectTab={() => setSelectedIndex(3)}
-          isActive={selectedIndex === 3}
+          onSelectTab={() => setSelectedIndex(2)}
+          isActive={selectedIndex === 2}
           planet={planet}
           index={3}
           title="geology"

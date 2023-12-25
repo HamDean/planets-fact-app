@@ -90,3 +90,35 @@ h1 {
 .activeTab-neptune {
   background: var(--neptune-bg);
 }
+
+.active-mercury {
+  @apply border-b-4 border-[var(--mercury-bg)];
+}
+
+.active-venus {
+  @apply border-b-4 border-[var(--venus-bg)];
+}
+
+.active-earth {
+  @apply border-b-4 border-[var(--earth-bg)];
+}
+
+.active-mars {
+  @apply border-b-4 border-[var(--mars-bg)];
+}
+
+.active-jupiter {
+  @apply border-b-4 border-[var(--jupiter-bg)];
+}
+
+.active-saturn {
+  @apply border-b-4 border-[var(--saturn-bg)];
+}
+
+.active-uranus {
+  @apply border-b-4 border-[var(--uranus-bg)];
+}
+
+.active-neptune {
+  @apply border-b-4 border-[var(--neptune-bg)];
+}

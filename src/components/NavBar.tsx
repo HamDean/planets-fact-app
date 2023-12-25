@@ -32,7 +32,7 @@ const NavBar = () => {
           {planets.map((planet, i) => (
             <li
               key={i}
-              onClick={() => setSelectedIndex(1)}
+              onClick={() => setSelectedIndex(0)}
               className={`hover:text-white lg:hover:border-t-2 lg:hover:border-[${colorCode[i]}] lg:hover:py-16 transition-all `}
             >
               <NavLink to={"/"} onClick={() => setPlanet(planet)}>
