@@ -7,6 +7,7 @@ const NavBar = () => {
   const setOpen = usePlanetStore((s) => s.setOpen);
   const isOpen = usePlanetStore((s) => s.isOpen);
   const setPlanet = usePlanetStore((s) => s.setPlanet);
+  const setSelectedIndex = usePlanetStore((s) => s.setSelectedIndex);
   const colorCode: { [key: number]: string } = {
     0: "#DEF4FC",
     1: "#F7CC7F",
@@ -31,6 +32,7 @@ const NavBar = () => {
           {planets.map((planet, i) => (
             <li
               key={i}
+              onClick={() => setSelectedIndex(1)}
               className={`hover:text-white lg:hover:border-t-2 lg:hover:border-[${colorCode[i]}] lg:hover:py-16 transition-all `}
             >
               <NavLink to={"/"} onClick={() => setPlanet(planet)}>

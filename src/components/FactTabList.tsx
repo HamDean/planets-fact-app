@@ -5,6 +5,7 @@ import FactTab from "./FactTab";
 const FactTabList = () => {
   const selectedIndex = usePlanetStore((s) => s.selectedIndex);
   const setSelectedIndex = usePlanetStore((s) => s.setSelectedIndex);
+  const planet = usePlanetStore((s) => s.planet);
 
   return (
     <div className="hidden md:block lg:w-[350px] lg:self-end ">
@@ -12,6 +13,7 @@ const FactTabList = () => {
         <FactTab
           onSelectTab={() => setSelectedIndex(1)}
           isActive={selectedIndex === 1}
+          planet={planet}
           index={1}
           title="overview"
         />
@@ -20,6 +22,7 @@ const FactTabList = () => {
         <FactTab
           onSelectTab={() => setSelectedIndex(2)}
           isActive={selectedIndex === 2}
+          planet={planet}
           index={2}
           title="internal structure"
         />
@@ -28,6 +31,7 @@ const FactTabList = () => {
         <FactTab
           onSelectTab={() => setSelectedIndex(3)}
           isActive={selectedIndex === 3}
+          planet={planet}
           index={3}
           title="geology"
         />
