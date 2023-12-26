@@ -11,7 +11,7 @@ const PlanetDesc = ({ name, content, source }: Props) => {
       <p className="text-[1.1rem] font-spartan opacity-[0.5] leading-[22px] w-[320px]">
         {content}
       </p>
-      <p className="opacity-[0.5] flex justify-start items-center gap-1 mt-[32px]">
+      <p className="opacity-[0.5] flex justify-center md:justify-start items-center gap-1 mt-[32px]">
         Source:{"    "}
         <a
           href={source}

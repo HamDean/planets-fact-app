@@ -12,7 +12,7 @@ const NavBar = () => {
   const planetIndex = usePlanetStore((s) => s.planetIndex);
 
   return (
-    <nav className="flex flex-col lg:py-5">
+    <nav className="flex flex-col">
       <div
         className={`${styles.flexBetween} border-[#38384F] border-b md:border-1 md:flex-col lg:flex-row  py-[16px] px-[24px]`}
       >
@@ -35,7 +35,7 @@ const NavBar = () => {
                 setSelectedIndex(0);
                 setPlanetIndex(i);
               }}
-              className={`hover:text-white lg:py-16 ${
+              className={`hover:text-white lg:py-12 ${
                 planetIndex === i && `lg:border-t-2 lg:border-[--${planet}-bg]`
               } `}
             >

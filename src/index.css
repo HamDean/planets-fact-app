@@ -30,11 +30,11 @@ h1 {
 }
 
 .tab-container {
-  @apply flex flex-col justify-center items-center px-7 text-center md:text-left mt-[50px];
+  @apply flex flex-col justify-center items-center px-7 text-center md:text-left mt-[20px];
 }
 
 .tab-layout {
-  @apply flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:w-[80vw] mb-32;
+  @apply flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:w-[80vw] mb-10;
 }
 
 .planet-image-container {
