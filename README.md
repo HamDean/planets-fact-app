@@ -40,6 +40,7 @@ Users should be able to:
 
 - [React](https://reactjs.org/) - JS library
 - Typescript
+- [Zustand](https://docs.pmnd.rs/zustand) - State management
 - Tailwind CSS
 - Mobile-first workflow
 
@@ -47,6 +48,7 @@ Users should be able to:
 
 I learnt how to use React router to create multipage application using the new react router dom layout component.
 I also learnt how to deploy application using vercel.
+I learnt how to use Zustand to manage the state of my application
 
 ```ts
  createBrowserRouter([
