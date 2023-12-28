@@ -1,3 +1,30 @@
+import earthOverview from "../assets/planet-earth.svg";
+import mercuryOverview from "../assets/planet-mercury.svg";
+import venusOverview from "../assets/planet-venus.svg";
+import marsOverview from "../assets/planet-mars.svg";
+import jupiterOverview from "../assets/planet-jupiter.svg";
+import saturnOverview from "../assets/planet-saturn.svg";
+import neptuneOverview from "../assets/planet-neptune.svg";
+import uranusOverview from "../assets/planet-uranus.svg";
+//Internal
+import earthInternal from "../assets/planet-earth-internal.svg";
+import mercuryInternal from "../assets/planet-mercury-internal.svg";
+import venusInternal from "../assets/planet-venus-internal.svg";
+import marsInternal from "../assets/planet-mars-internal.svg";
+import jupiterInternal from "../assets/planet-jupiter-internal.svg";
+import saturnInternal from "../assets/planet-saturn-internal.svg";
+import neptuneInternal from "../assets/planet-neptune-internal.svg";
+import uranusInternal from "../assets/planet-uranus-internal.svg";
+//Geology
+import earthGeology from "../assets/geology-earth.png";
+import mercuryGeology from "../assets/geology-mercury.png";
+import venusGeology from "../assets/geology-venus.png";
+import marsGeology from "../assets/geology-mars.png";
+import jupiterGeology from "../assets/geology-jupiter.png";
+import saturnGeology from "../assets/geology-saturn.png";
+import neptuneGeology from "../assets/geology-neptune.png";
+import uranusGeology from "../assets/geology-uranus.png";
+
 export default [
   {
     name: "Mercury",
@@ -22,9 +49,9 @@ export default [
     radius: "2,439.7 KM",
     temperature: "430°c",
     images: {
-      planet: "../src/assets/planet-mercury.svg",
-      internal: "../src/assets/planet-mercury-internal.svg",
-      geology: "../src/assets/geology-mercury.png",
+      planet: mercuryOverview,
+      internal: mercuryInternal,
+      geology: mercuryGeology,
     },
     color: "#DEF4FC",
   },
@@ -50,9 +77,9 @@ export default [
     radius: "6,051.8 KM",
     temperature: "471°c",
     images: {
-      planet: "../src/assets/planet-venus.svg",
-      internal: "../src/assets/planet-venus-internal.svg",
-      geology: "../src/assets/geology-venus.png",
+      planet: venusOverview,
+      internal: venusInternal,
+      geology: venusGeology,
     },
     color: "#F7CC7F",
   },
@@ -78,9 +105,9 @@ export default [
     radius: "6,371 KM",
     temperature: "16°c",
     images: {
-      planet: "../src/assets/planet-earth.svg",
-      internal: "../src/assets/planet-earth-internal.svg",
-      geology: "../src/assets/geology-earth.png",
+      planet: earthOverview,
+      internal: earthInternal,
+      geology: earthGeology,
     },
     color: "545BFE",
   },
@@ -106,9 +133,9 @@ export default [
     radius: "3,389.5 KM",
     temperature: "-28°c",
     images: {
-      planet: "../src/assets/planet-mars.svg",
-      internal: "../src/assets/planet-mars-internal.svg",
-      geology: "../src/assets/geology-mars.png",
+      planet: marsOverview,
+      internal: marsInternal,
+      geology: marsGeology,
     },
     color: "FF6A45",
   },
@@ -135,9 +162,9 @@ export default [
     radius: "69,911 KM",
     temperature: "-108°c",
     images: {
-      planet: "../src/assets/planet-jupiter.svg",
-      internal: "../src/assets/planet-jupiter-internal.svg",
-      geology: "../src/assets/geology-jupiter.png",
+      planet: jupiterOverview,
+      internal: jupiterInternal,
+      geology: jupiterGeology,
     },
     color: "ECAD7A",
   },
@@ -163,9 +190,9 @@ export default [
     radius: "58,232 KM",
     temperature: "-138°c",
     images: {
-      planet: "../src/assets/planet-saturn.svg",
-      internal: "../src/assets/planet-saturn-internal.svg",
-      geology: "../src/assets/geology-saturn.png",
+      planet: saturnOverview,
+      internal: saturnInternal,
+      geology: saturnGeology,
     },
     color: "FCCB6B",
   },
@@ -191,9 +218,9 @@ export default [
     radius: "25,362 KM",
     temperature: "-195°c",
     images: {
-      planet: "../src/assets/planet-uranus.svg",
-      internal: "../src/assets/planet-uranus-internal.svg",
-      geology: "../src/assets/geology-uranus.png",
+      planet: uranusOverview,
+      internal: uranusInternal,
+      geology: uranusGeology,
     },
     color: "65F0D5",
   },
@@ -219,9 +246,9 @@ export default [
     radius: "24,622 KM",
     temperature: "-201°c",
     images: {
-      planet: "../src/assets/planet-neptune.svg",
-      internal: "../src/assets/planet-neptune-internal.svg",
-      geology: "../src/assets/geology-neptune.png",
+      planet: neptuneOverview,
+      internal: neptuneInternal,
+      geology: neptuneGeology,
     },
     color: "497EFA",
   },
