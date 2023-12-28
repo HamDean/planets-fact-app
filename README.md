@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/HamDean/planets-fact-app)
-- Live Site URL: [Add live site URL here](https://planets-fact-app-three.vercel.app/)
+- Solution URL: [Solution](https://github.com/HamDean/planets-fact-app)
+- Live Site URL: [live site URL here](https://planets-fact-app-three.vercel.app/)
 
 ## My process
 
