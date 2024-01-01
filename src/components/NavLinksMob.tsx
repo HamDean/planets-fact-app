@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { planets, styles } from "../data/constants";
 import usePlanetStore from "../store";
+import { imgSrc } from "../data/data";
 
 const NavLinksMob = () => {
   const setPlanet = usePlanetStore((s) => s.setPlanet);
@@ -50,7 +51,7 @@ const NavLinksMob = () => {
               {p}
             </Link>
           </span>
-          <img src="../src/assets/icon-chevron.svg" />
+          <img src={imgSrc.chevron} />
         </li>
       ))}
     </ul>

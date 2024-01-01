@@ -25,6 +25,10 @@ import saturnGeology from "../assets/geology-saturn.png";
 import neptuneGeology from "../assets/geology-neptune.png";
 import uranusGeology from "../assets/geology-uranus.png";
 
+import chevron from "../assets/icon-chevron.svg";
+import hamburger from "../assets/icon-hamburger.svg";
+import source from "../assets/icon-source.svg";
+
 export default [
   {
     name: "Mercury",
@@ -253,3 +257,9 @@ export default [
     color: "497EFA",
   },
 ];
+
+export const imgSrc = {
+  chevron: chevron,
+  hamburger: hamburger,
+  source: source,
+};

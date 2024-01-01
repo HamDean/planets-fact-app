@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { planets, styles } from "../data/constants";
 import usePlanetStore from "../store";
 import NavLinksMob from "./NavLinksMob";
+import { imgSrc } from "../data/data";
 
 const NavBar = () => {
   const setOpen = usePlanetStore((s) => s.setOpen);
@@ -48,7 +49,7 @@ const NavBar = () => {
 
         <img
           className="w-[2.4rem] h-[1.7rem] cursor-pointer md:hidden"
-          src="../src/assets/icon-hamburger.svg"
+          src={imgSrc.hamburger}
           onClick={() => setOpen()}
         />
       </div>

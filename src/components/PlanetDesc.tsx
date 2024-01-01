@@ -1,3 +1,5 @@
+import { imgSrc } from "../data/data";
+
 interface Props {
   name?: string;
   content?: string;
@@ -20,10 +22,7 @@ const PlanetDesc = ({ name, content, source }: Props) => {
         >
           Wikipedia
           <span>
-            <img
-              className="w-[12px] h-[12px]"
-              src="../src/assets/icon-source.svg"
-            />
+            <img className="w-[12px] h-[12px]" src={imgSrc.source} />
           </span>
         </a>
       </p>
