@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface Props {
   index: number;
   title: string;
@@ -8,7 +10,9 @@ interface Props {
 
 const FactTab = ({ index, title, isActive, onSelectTab, planet }: Props) => {
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", duration: 0.05 }}
       className={`flex justify-start items-center text-[9px] h-[48px] 
         w-[280px] lg:w-full gap-8 font-bold border-[#38384F] border 
         px-[28px] py-[12px] mb-3 ${!isActive && "hover:bg-[#38384F]"} ${
@@ -19,7 +23,7 @@ const FactTab = ({ index, title, isActive, onSelectTab, planet }: Props) => {
     >
       <h4 className=" opacity-[0.5]">0{index}</h4>
       <h3 className="uppercase">{title}</h3>
-    </div>
+    </motion.div>
   );
 };
 export default FactTab;
